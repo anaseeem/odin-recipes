@@ -26,6 +26,34 @@ body {
   padding: 2rem;
 }
 
+.container {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+.container_main {
+  max-width: 50rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.heading {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.heading_main {
+  font-size: 5rem;
+  text-align: center;
+  margin-top: 10rem;
+}
+.description_main {
+  font-size: 2rem;
+  text-align: center;
+}
+
 .navigation {
   display: flex;
   align-items: center;
@@ -34,14 +62,23 @@ body {
   font-size: 1.6rem;
 }
 
-.navigation ul {
-  list-style: none;
+.navigation .list {
+  /* list-style: none; */
   padding: 0;
   margin: 0;
   display: flex;
   gap: 1.6rem;
 }
 
+.navigation_main .list {
+  flex-direction: column;
+  list-style: decimal-leading-zero;
+}
+
 .navigation li {
   display: block;
+}
+
+.navigation_main .list li {
+  display: list-item;
 }
