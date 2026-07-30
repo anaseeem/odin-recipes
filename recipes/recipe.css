@@ -1,0 +1,95 @@
+.container {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+.heading {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.recipe {
+  padding-bottom: 5rem;
+}
+.receipe_header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.recipe_title {
+  margin-top: 3rem;
+  margin-bottom: 6rem;
+  text-transform: uppercase;
+  font-size: 4rem;
+  position: relative;
+}
+
+.recipe_title::after {
+  content: "";
+  width: 120%;
+  height: 0px;
+  background-color: transparent;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow:
+    4rem 0 0 1px black,
+    -4rem 4px 0 1px black;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.4rem;
+}
+
+.recipe_figure {
+  max-width: 500px;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  font-size: 1.6rem;
+}
+.recipe_figure > img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.recipe_figure > figcaption {
+  margin-top: 1rem;
+}
+
+.recipe_description {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+}
+
+.recipe_ingredients {
+  margin-top: 2rem;
+}
+.recipe_ingredients .heading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.recipe_ingredients .list {
+  font-size: 1.6rem;
+  padding-left: 1.6rem;
+}
+
+.recipe_steps {
+  margin-top: 2rem;
+}
+.recipe_steps .heading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.recipe_steps .list {
+  font-size: 1.6rem;
+  padding-left: 1.6rem;
+}
