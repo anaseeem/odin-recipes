@@ -29,7 +29,8 @@
     -4rem 4px 0 1px black;
 }
 
-.list {
+.recipe_ingredients .list,
+.recipe_steps .list {
   display: flex;
   flex-direction: column;
   row-gap: 0.4rem;
